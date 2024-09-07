@@ -82,3 +82,18 @@ This is a list things you need to use the Gym Tracker.
     ```
 6. Finally, run `$ dotnet run inventory-api/inventory-api.csproj` to start the server or use Visual Studio/Rider to run the
    project.
+
+### Migrations
+
+#### Create a migration
+
+1. Create changes to Models/Context
+2. Run the following command in the root of the inventory-api project
+-  ```sh
+   $ dotnet ef migrations add <MigrationName>
+   ```
+3. Run the following command to update the database
+-  ```sh
+   $ dotnet ef database update
+   ```
+
