@@ -1,0 +1,8 @@
+﻿services:
+  mysql:
+    container_name: inventory-api-mysql
+    build:
+      context: .
+      dockerfile: inventory-api/Dockerfile
+    ports:
+      - 3306:3306
